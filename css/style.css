@@ -88,12 +88,8 @@ nav>ul>li>a:focus {
     display: none;
 }
 
-.sub li {
-    padding: 5px;
-}
-
-.sub li:hover,
-.sub li:focus {
+.sub li a:hover,
+.sub li a:focus {
     background: #333333;
     color: #ffffff;
 }
@@ -111,13 +107,15 @@ nav>ul>li>a:focus {
 }
 
 .slide ul {
+    top: 0;
     height: 900px;
+    position: absolute;
 }
 
 .slide li {
+    position: relative;
     height: 300px;
     width: 1200px;
-    position: absolute;
     top: 0;
     left: 0;
 }
