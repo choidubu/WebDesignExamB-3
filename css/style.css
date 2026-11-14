@@ -1,0 +1,283 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    background: #ffffff;
+    color: #333333;
+}
+
+.wrap {
+    position: relative;
+}
+
+header {
+    height: 100px;
+    background: #dddddd;
+}
+
+.headerinner {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    background: #dddddd;
+    position: relative;
+    padding-top: 30px;
+}
+
+nav {
+    position: absolute;
+    right: 10px;
+    z-index: 5;
+    text-align: center;
+    top: 54px;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav>ul>li>a {
+    display: block;
+    width: 150px;
+    background: #ffffff;
+    color: #333333;
+    border: 1px solid #333333;
+    padding: 10px;
+}
+
+nav>ul>li:hover>a,
+nav>ul>li.on>a,
+nav>ul>li>a:focus {
+    background: #333333;
+    color: #ffffff;
+}
+
+.sub {
+    width: 150px;
+    background: #ffffff;
+    color: #333333;
+    border: 1px solid #333333;
+    display: none;
+}
+
+.sub li {
+    padding: 5px;
+}
+
+.sub li:hover,
+.sub li:focus {
+    background: #333333;
+    color: #ffffff;
+}
+
+.sub a {
+    display: block;
+}
+
+.slide {
+    height: 300px;
+    width: 1200px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide ul {
+    height: 900px;
+}
+
+.slide li {
+    height: 300px;
+    width: 1200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide a {
+    display: block;
+    height: 100%;
+}
+
+.slide h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(200, 200, 200, .7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.slide .s1 {
+    background: url(../img/slide1.jpg) no-repeat center/cover;
+}
+
+.slide .s2 {
+    background: url(../img/slide2.jpg) no-repeat center/cover;
+}
+
+.slide .s3 {
+    background: url(../img/slide3.jpg) no-repeat center/cover;
+}
+
+.contents {
+    height: 200px;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+}
+
+.contents article {
+    width: 400px;
+}
+
+.con1 h2 {
+    width: 120px;
+    padding: 10px;
+    text-align: center;
+    height: 50px;
+    background: #aaaaaa;
+}
+
+.con1 div {
+    height: 150px;
+    background: #aaaaaa;
+    padding: 10px;
+}
+
+.con1 tr {
+    border-bottom: 1px solid #333333;
+}
+
+.con1 th {
+    text-align: left;
+    padding: 3px;
+}
+
+.con1 a {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.con2 h2 {
+    width: 120px;
+    padding: 10px;
+    text-align: center;
+    height: 50px;
+    background: #aaaaaa;
+}
+
+.con2 ul {
+    display: flex;
+    height: 150px;
+    background: #aaaaaa;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.con2 li:hover {
+    opacity: 0.5;
+}
+
+.con3 {
+    position: relative;
+}
+
+.con3 a {
+    display: block;
+}
+
+.con3 h2 {
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    color: #aaaaaa;
+}
+
+.con3 p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #aaaaaa;
+    background: #000000;
+    text-align: center;
+    width: 300px;
+}
+
+footer {
+    height: 100px;
+    background: #dddddd;
+}
+
+.footerinner {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    background: #dddddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.footsns ul {
+    display: flex;
+    gap: 10px;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    height: 260px;
+    width: 400px;
+    border: 1px solid #333333;
+    text-align: center;
+    z-index: 999;
+    display: none;
+}
+
+.popup h2 {
+    margin-top: 20px;
+}
+
+.button {
+    text-align: right;
+    margin-right: 10px;
+}
